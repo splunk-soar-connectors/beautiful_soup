@@ -1,0 +1,614 @@
+{
+    "appid"       : "0fb33cc2-5cad-4bcf-8094-4e0faccd19fb",
+    "name"      : "Beautiful Soup Utilities",
+    "description" : "Implements basic BeautifulSoup functions for UI access",
+    "publisher": "Freeware",
+    "package_name": "BeautifulSoupUtilities",
+    "type": "generic",
+    "license": "Freeware",
+    "main_module" : "bs4_connector.pyc",
+    "app_version": "1.0.1",
+    "utctime_updated": "2017-06-17T07:09:42.000000Z",
+    "product_vendor": "Generic",
+    "product_name": "Beautiful Soup Utilities",
+    "product_version_regex": ".*",
+    "min_phantom_version": "1.0.0",
+    "logo": "bs4.png",
+    "configuration": {},
+    "actions": [
+      {
+        "action": "find strings",
+        "description": "Finds the strings in html data.",
+        "type": "generic",
+        "identifier": "find_strings",
+        "read_only": true,
+        "parameters": {
+          "search_string": {
+            "description": "String to search for",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          },
+          "source_string": {
+            "description": "HTML source to search for string in",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          }
+        },
+        "output": [
+          {
+            "data_path": "action_result.data",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.message",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.search_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.source_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.summary",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.data.*.strings",
+            "data_type": "string"
+          }
+        ],
+        "versions":"EQ(*)"
+      },
+      {
+        "action": "remove attributes",
+        "description": "Removes the tag attributes provided in a comma separated list",
+        "type": "generic",
+        "identifier": "remove_attributes",
+        "read_only": true,
+        "parameters": {
+          "source_string": {
+            "description": "HTML source string",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          },
+          "tag_attributes_list": {
+            "description": "Comma separated values to remove from tags",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          }
+        },
+        "output": [
+          {
+            "data_path": "action_result.data",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.message",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.data.*.results",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.source_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.tag_attributes_list",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.summary",
+            "data_type": "string"
+          }
+        ],
+        "versions":"EQ(*)"
+      },
+      {
+        "action": "remove tags",
+        "description": "Removes the tags provided in a comma separated list",
+        "type": "generic",
+        "identifier": "remove_tags",
+        "read_only": true,
+        "parameters": {
+          "source_string": {
+            "description": "HTML source string",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          },
+          "tag_list": {
+            "description": "Comma separated values of tags to remove",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          }
+        },
+        "output": [
+          {
+            "data_path": "action_result.data",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.message",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.data.*.results",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.source_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.tag_list",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.summary",
+            "data_type": "string"
+          }
+        ],
+        "versions":"EQ(*)"
+      },
+      {
+        "action": "extract tags",
+        "description": "Uses SoupStrainer to return the tags from a comma separated list",
+        "type": "generic",
+        "identifier": "extract_tags",
+        "read_only": true,
+        "parameters": {
+          "source_string": {
+            "description": "HTML source string",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          },
+          "tag_list": {
+            "description": "Comma separated values of tags to return",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          }
+        },
+        "output": [
+          {
+            "data_path": "action_result.data",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.message",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.data.*.results",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.source_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.tag_list",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.summary",
+            "data_type": "string"
+          }
+        ],
+        "versions":"EQ(*)"
+      },
+      {
+        "action": "wrap tags",
+        "description": "Wraps the specified tag with a new tag",
+        "type": "generic",
+        "identifier": "wrap_tag",
+        "read_only": true,
+        "parameters": {
+          "source_string": {
+            "description": "HTML source string",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          },
+          "tag": {
+            "description": "Tag to be wrapped",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          },
+          "wrap_tag": {
+            "description": "Tag to wrap around existing tag",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          }
+        },
+        "output": [
+          {
+            "data_path": "action_result.data",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.message",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.data.*.results",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.source_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.tag",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.wrap_tag",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.summary",
+            "data_type": "string"
+          }
+        ],
+        "versions":"EQ(*)"
+      },
+      {
+        "action": "unwrap tags",
+        "description": "Unwraps the specified tags from all instances",
+        "type": "generic",
+        "identifier": "unwrap_tag",
+        "read_only": true,
+        "parameters": {
+          "source_string": {
+            "description": "HTML source string",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          },
+          "tag_list": {
+            "description": "List of comma separated tags to unwrap",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          }
+        },
+        "output": [
+          {
+            "data_path": "action_result.data",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.message",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.data.*.results",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.source_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.tag_list",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.summary",
+            "data_type": "string"
+          }
+        ],
+        "versions":"EQ(*)"
+      },
+      {
+        "action": "get urls",
+        "description": "Finds URLs in given HTML code",
+        "type": "generic",
+        "identifier": "get_html_urls",
+        "read_only": true,
+        "parameters": {
+          "source_string": {
+            "description": "HTML source string.",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          }
+        },
+        "output": [
+          {
+            "data_path": "action_result.data",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.message",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.source_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.summary",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.data.*.urls",
+            "data_type": "string"
+          }
+        ],
+        "versions":"EQ(*)"
+      },
+      {
+        "action": "extract tag",
+        "description": "Removes a tag or string from the tree. It returns the first instance of the tag or string that was extracted.",
+        "type": "generic",
+        "identifier": "extract_tag",
+        "read_only": true,
+        "parameters": {
+          "source_string": {
+            "description": "HTML source string",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          },
+          "tag": {
+            "description": "Tag to extract and return",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          }
+        },
+        "output": [
+          {
+            "data_path": "action_result.data",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.message",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.data.*.results",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.source_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.tag",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.summary",
+            "data_type": "string"
+          }
+        ],
+        "versions":"EQ(*)"
+      },
+      {
+        "action": "transform to table",
+        "description": "Returns a HTML table from dictionary or list of dictionaries",
+        "type": "generic",
+        "identifier": "transform_to_table",
+        "read_only": true,
+        "parameters": {
+          "source_string": {
+            "description": "HTML source string.",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          }
+        },
+        "output": [
+          {
+            "data_path": "action_result.data",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.message",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.source_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.summary",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.data.*.table",
+            "data_type": "string"
+          }
+        ],
+        "versions":"EQ(*)"
+      },
+      {
+        "action": "get pretty",
+        "description": "Returns the data after applying the Beautiful Soup Prettify function",
+        "type": "generic",
+        "identifier": "get_pretty",
+        "read_only": true,
+        "parameters": {
+          "source_string": {
+            "description": "HTML source string.",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          }
+        },
+        "output": [
+          {
+            "data_path": "action_result.data",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.message",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.source_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.summary",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.data.*.pretty",
+            "data_type": "string"
+          }
+        ],
+        "versions":"EQ(*)"
+      },
+      {
+        "action": "find all",
+        "description": "Returns a list of all the instances found",
+        "type": "generic",
+        "identifier": "find_all",
+        "read_only": true,
+        "parameters": {
+          "source_string": {
+            "description": "HTML source string.",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          },
+          "find_field": {
+            "description": "HTML tag to find",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          }
+        },
+        "output": [
+          {
+            "data_path": "action_result.data",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.message",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.source_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.find_field",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.summary",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.data.*.field_list",
+            "data_type": "string"
+          }
+        ],
+        "versions":"EQ(*)"
+      },
+      {
+        "action": "get text",
+        "description": "Returns the text from an HTML string source.",
+        "type": "generic",
+        "identifier": "get_html_text",
+        "read_only": true,
+        "parameters": {
+          "source_string": {
+            "description": "Source string.",
+            "data_type": "string",
+            "primary": true,
+            "required": true
+          }
+        },
+        "output": [
+          {
+            "data_path": "action_result.data",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.message",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.parameter.source_string",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.summary",
+            "data_type": "string"
+          },
+          {
+            "data_path": "action_result.data.*.plain_text",
+            "data_type": "string"
+          }
+        ],
+        "versions":"EQ(*)"
+      }
+    ]
+}

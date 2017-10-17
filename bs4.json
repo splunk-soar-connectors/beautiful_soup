@@ -2,7 +2,7 @@
     "appid"       : "0fb33cc2-5cad-4bcf-8094-4e0faccd19fb",
     "name"      : "Beautiful Soup Utilities",
     "description" : "Implements basic BeautifulSoup functions for UI access",
-    "publisher": "Freeware",
+    "publisher": "Robert Martin",
     "package_name": "phantom_beautifulsouputilities",
     "type": "generic",
     "license": "Freeware",

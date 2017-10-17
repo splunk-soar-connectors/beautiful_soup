@@ -3,22 +3,27 @@
     "name"      : "Beautiful Soup Utilities",
     "description" : "Implements basic BeautifulSoup functions for UI access",
     "publisher": "Freeware",
-    "package_name": "BeautifulSoupUtilities",
+    "package_name": "phantom_beautifulsouputilities",
     "type": "generic",
     "license": "Freeware",
     "main_module" : "bs4_connector.pyc",
-    "app_version": "1.0.1",
-    "utctime_updated": "2017-06-17T07:09:42.000000Z",
+    "app_version": "1.0.2",
+    "utctime_updated": "2017-10-17T07:09:42.000000Z",
     "product_vendor": "Generic",
     "product_name": "Beautiful Soup Utilities",
     "product_version_regex": ".*",
-    "min_phantom_version": "1.0.0",
+    "min_phantom_version": "3.0.251",
     "logo": "bs4.png",
     "configuration": {},
+    "pip_dependencies": {
+        "wheel": [
+          {"module": "bs4", "input_file": "wheels/beautifulsoup4-4.6.0-py2-none-any.whl"}
+        ]
+      },
     "actions": [
       {
         "action": "find strings",
-        "description": "Finds the strings in html data.",
+        "description": "Finds the strings in html data",
         "type": "generic",
         "identifier": "find_strings",
         "read_only": true,
@@ -382,7 +387,7 @@
       },
       {
         "action": "extract tag",
-        "description": "Removes a tag or string from the tree. It returns the first instance of the tag or string that was extracted.",
+        "description": "Removes a tag or string from the tree. It returns the first instance of the tag or string that was extracted",
         "type": "generic",
         "identifier": "extract_tag",
         "read_only": true,
@@ -570,7 +575,7 @@
       },
       {
         "action": "get text",
-        "description": "Returns the text from an HTML string source.",
+        "description": "Returns the text from an HTML string source",
         "type": "generic",
         "identifier": "get_html_text",
         "read_only": true,

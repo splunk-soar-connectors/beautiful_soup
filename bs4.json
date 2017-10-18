@@ -7,7 +7,7 @@
     "type": "generic",
     "license": "Freeware",
     "main_module" : "bs4_connector.pyc",
-    "app_version": "1.0.2",
+    "app_version": "1.0.3",
     "utctime_updated": "2017-10-17T07:09:42.000000Z",
     "product_vendor": "Generic",
     "product_name": "Beautiful Soup Utilities",
@@ -27,6 +27,12 @@
         "type": "generic",
         "identifier": "find_strings",
         "read_only": true,
+        "render": {
+                "type": "json",
+                "width": 12,
+                "height": 5,
+                "title": "find strings"
+            },
         "parameters": {
           "search_string": {
             "description": "String to search for",
@@ -79,6 +85,12 @@
         "type": "generic",
         "identifier": "remove_attributes",
         "read_only": true,
+        "render": {
+                "type": "json",
+                "width": 12,
+                "height": 5,
+                "title": "remove attributes"
+            },
         "parameters": {
           "source_string": {
             "description": "HTML source string",
@@ -131,6 +143,12 @@
         "type": "generic",
         "identifier": "remove_tags",
         "read_only": true,
+        "render": {
+                "type": "json",
+                "width": 12,
+                "height": 5,
+                "title": "remove tags"
+        },
         "parameters": {
           "source_string": {
             "description": "HTML source string",
@@ -183,6 +201,12 @@
         "type": "generic",
         "identifier": "extract_tags",
         "read_only": true,
+        "render": {
+                "type": "json",
+                "width": 12,
+                "height": 5,
+                "title": "extract tags"
+        },
         "parameters": {
           "source_string": {
             "description": "HTML source string",
@@ -235,6 +259,12 @@
         "type": "generic",
         "identifier": "wrap_tag",
         "read_only": true,
+        "render": {
+                "type": "json",
+                "width": 12,
+                "height": 5,
+                "title": "wrap tags"
+        },
         "parameters": {
           "source_string": {
             "description": "HTML source string",
@@ -297,6 +327,12 @@
         "type": "generic",
         "identifier": "unwrap_tag",
         "read_only": true,
+        "render": {
+                "type": "json",
+                "width": 12,
+                "height": 5,
+                "title": "unwrap tags"
+        },
         "parameters": {
           "source_string": {
             "description": "HTML source string",
@@ -349,6 +385,12 @@
         "type": "generic",
         "identifier": "get_html_urls",
         "read_only": true,
+        "render": {
+                "type": "json",
+                "width": 12,
+                "height": 5,
+                "title": "get urls"
+        },
         "parameters": {
           "source_string": {
             "description": "HTML source string.",
@@ -391,6 +433,12 @@
         "type": "generic",
         "identifier": "extract_tag",
         "read_only": true,
+        "render": {
+                "type": "json",
+                "width": 12,
+                "height": 5,
+                "title": "extract tag"
+        },
         "parameters": {
           "source_string": {
             "description": "HTML source string",
@@ -443,6 +491,12 @@
         "type": "generic",
         "identifier": "transform_to_table",
         "read_only": true,
+        "render": {
+                "type": "json",
+                "width": 12,
+                "height": 5,
+                "title": "transform to table"
+        },
         "parameters": {
           "source_string": {
             "description": "HTML source string.",
@@ -485,6 +539,12 @@
         "type": "generic",
         "identifier": "get_pretty",
         "read_only": true,
+        "render": {
+                "type": "json",
+                "width": 12,
+                "height": 5,
+                "title": "get pretty"
+        },
         "parameters": {
           "source_string": {
             "description": "HTML source string.",
@@ -527,6 +587,12 @@
         "type": "generic",
         "identifier": "find_all",
         "read_only": true,
+        "render": {
+                "type": "json",
+                "width": 12,
+                "height": 5,
+                "title": "find all"
+        },
         "parameters": {
           "source_string": {
             "description": "HTML source string.",
@@ -579,6 +645,12 @@
         "type": "generic",
         "identifier": "get_html_text",
         "read_only": true,
+        "render": {
+                "type": "json",
+                "width": 12,
+                "height": 5,
+                "title": "get text"
+        },
         "parameters": {
           "source_string": {
             "description": "Source string.",
